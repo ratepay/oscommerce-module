@@ -1,0 +1,30 @@
+***********************************************************
+**********| Version 2.1.2 - Released 2014-09-03 |**********
+***********************************************************
+* support of AT with separate credentials
+* DE/AT can be activated separately
+* support of B2B (by country)
+* support of ALA (by country)
+* sandbox mode=true as standard
+* DSE/ZGB prefilled
+* changed RatePAY error text
+
+***********************************************************
+**********| Version 2.1.1 - Released 2014-08-27 |**********
+***********************************************************
+* bugfix of error msg
+
+***********************************************************
+**********| Version 2.1.0 - Released 2014-08-14 |**********
+***********************************************************
+* deleted http-header-list
+* added payment method directdebit
+* deleted aggreement checkboxes for installment and invoice
+* fixed phone validation
+* fixed dob validation
+
+***********************************************************
+**********| Version 2.0.1 - Released 2013-10-01 |**********
+***********************************************************
+* initial commit
+
