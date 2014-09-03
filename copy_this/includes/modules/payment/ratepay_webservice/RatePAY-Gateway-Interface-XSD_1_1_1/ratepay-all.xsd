@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:rp="urn://www.ratepay.com/payment/1_0" elementFormDefault="qualified" targetNamespace="urn://www.ratepay.com/payment/1_0">
-
-  <xs:include schemaLocation="ratepay-request.xsd"/>
-  <xs:include schemaLocation="ratepay-response.xsd"/>  
-    
-</xs:schema>
