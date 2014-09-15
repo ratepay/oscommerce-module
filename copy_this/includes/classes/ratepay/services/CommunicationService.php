@@ -26,13 +26,13 @@ class CommunicationService
      * 
      * @var string 
      */
-    private $_testEndpoint = 'https://webservices-int.eos-payment.com/custom/ratepay/xml/1_0';
+    private $_testEndpoint = 'https://gateway-int.ratepay.com/api/xml/1_0';
     /**
      * Live endpoints
      * 
      * @var string 
      */
-    private $_liveEndpoint = 'https://webservices.eos-payment.com/custom/ratepay/xml/1_0';
+    private $_liveEndpoint = 'https://gateway.ratepay.com/api/xml/1_0';
 
     /**
      * Retrieve a cURL-Handler
