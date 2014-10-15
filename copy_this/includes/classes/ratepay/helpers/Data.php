@@ -29,7 +29,7 @@ class Data
 {
     
     /**
-     * Retrieve the credntials for the requets
+     * Retrieve the credntials for the request
      * 
      * @param string $payment
      * @return array
@@ -163,6 +163,9 @@ class Data
     {
         $item = array();
         $unitPrice = self::getLocalePrice($product['price'], $order);
+        if (isset($product['attributes']) && is_array($product['attributes'])) {
+            $unitPrice += self::getItemAttributesTotalPrice($product['attributes']);
+        }
         $unitTax = $unitPrice * (floatval($product['tax'])/100);
         $item['qty'] = $product['qty'];
         $item['name'] = $product['name'];
@@ -172,6 +175,24 @@ class Data
         $item['tax'] = $product['qty'] * $unitTax;
         return $item;
     }
+
+    /**
+     * Retrieve a request item from a given shop order product
+     *
+     * @param array $product
+     * @return array
+     */
+    public static function getItemAttributesTotalPrice(array $attributes)
+    {
+        $attrTotalPrice = 0;
+        foreach ($attributes as $attribute) {
+            $attrTotalPrice += $attribute['price'];
+        }
+        return $attrTotalPrice;
+
+    }
+
+
 
     /**
      * Retrieve a request shipping item from the given order
@@ -230,13 +251,13 @@ class Data
      */
     public static function getBasketAmount(order $order, $orderId = null, array $post = array())
     {
-        $discountPrice = 0;
+        /*$discountPrice = 0;
         foreach (self::getDiscounts() as $discountData) {
             $discount = self::getDiscountData($discountData, $order);
             $discountPrice += $discount['totalPrice'] + $discount['tax'];
-        }
-        
-        $amount = self::getLocalePrice($order->info['total'] + $discountPrice, $order);
+        }*/
+
+        $amount = self::getLocalePrice($order->info['total'], $order);
 
         if (!is_null($orderId)) {
             $amount = 0;
@@ -335,9 +356,9 @@ class Data
             $discount['qty'] = 1;
             $discount['name'] = $discountData['title'];
             $discount['id'] = 'DISCOUNT';
-            $discount['unitPrice'] = number_format(self::getLocalePrice(self::getCouponAmount($discountData['value']), $order), 2, ".", "");
-            $discount['totalPrice'] = number_format(self::getCouponAmount(self::getCouponAmount($discountData['value']), $order), 2, ".", "");
-            $discount['tax'] = number_format(self::getCouponTaxAmount(self::getCouponAmount($discountData['value']), $order), 2, ".", "");
+            $discount['unitPrice'] = number_format(self::getCouponAmount($discountData['valueLocal']), 2, ".", "");
+            $discount['totalPrice'] = number_format(self::getCouponAmount($discountData['valueLocal']), 2, ".", "");
+            $discount['tax'] = number_format(self::getCouponTaxAmount(self::getCouponAmount($discountData['valueLocal']), $order), 2, ".", "");
         }
 
         return $discount;
