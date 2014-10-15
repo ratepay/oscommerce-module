@@ -69,6 +69,7 @@ require(DIR_WS_INCLUDES . 'header.php');
                                     </td>
                                 </tr>
                             </table>
+                            <?php Session::setRpSessionEntry('message', null); ?>
                             <?php endif; ?>
                             <?php if ($order->info['payment_method'] == 'ratepay_rate'): ?>
                             <?php $details = Db::getRatepayRateDetails($orderId); ?>

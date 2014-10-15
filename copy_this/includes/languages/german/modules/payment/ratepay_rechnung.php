@@ -124,7 +124,7 @@ define('RATEPAY_RECHNUNG_AGB_ERROR', 'Bitte akzeptieren Sie die Allgemeinen Nutz
 define('RATEPAY_RECHNUNG_VIEW_PAYMENT_BIRTHDATE_FORMAT', '(tt.mm.jjjj)');
 // Checkout end
 // Checkout errors
-define('RATEPAY_LASTSCHRIFT_ERROR', '*Leider ist eine Bezahlung mit RatePAY nicht möglich. Diese Entscheidung ist auf Grundlage einer automatisierten Datenverarbeitung getroffen worden. Einzelheiten finden sie in den zusätzlichen Allgemeinen Geschäftsbedingungen und dem Datenschutzhinweis für RatePAY-Zahlungsarten.');
+define('RATEPAY_RECHNUNG_ERROR', '*Leider ist eine Bezahlung mit RatePAY nicht möglich. Diese Entscheidung ist auf Grundlage einer automatisierten Datenverarbeitung getroffen worden. Einzelheiten finden sie in den zusätzlichen Allgemeinen Geschäftsbedingungen und dem Datenschutzhinweis für RatePAY-Zahlungsarten.');
 define('RATEPAY_RECHNUNG_ERROR_GATEWAY', '*Leider ist die Verbindung zu RatePAY derzeit nicht möglich, bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.');
 define('RATEPAY_RECHNUNG_PHONE_IS_MISSING', '*Geben Sie bitte für die Zahlungsoption RatePAY Rechnung Ihre Telefonnummer an.');
 define('RATEPAY_RECHNUNG_PHONE_IS_INVALID', '*Geben Sie bitte für die Zahlungsoption RatePAY Rechnung eine gültige Telefonnummer an.');

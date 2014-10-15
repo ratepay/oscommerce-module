@@ -101,7 +101,7 @@ define('RATEPAY_RATE_VIEW_PAYMENT_BIRTHDATE_FORMAT', '(tt.mm.jjjj)');
 define('RATEPAY_RATE_RATE_CALCULATOR_ERROR', 'Bitte lassen Sie zuerst Ihre Ratenplan berechnen bevor Sie mit dem Kauf fortfahren.');
 // Checkout end
 // Checkout errors
-define('RATEPAY_LASTSCHRIFT_ERROR', '*Leider ist eine Bezahlung mit RatePAY nicht möglich. Diese Entscheidung ist auf Grundlage einer automatisierten Datenverarbeitung getroffen worden. Einzelheiten finden sie in den zusätzlichen Allgemeinen Geschäftsbedingungen und dem Datenschutzhinweis für RatePAY-Zahlungsarten.');
+define('RATEPAY_RATE_ERROR', '*Leider ist eine Bezahlung mit RatePAY nicht möglich. Diese Entscheidung ist auf Grundlage einer automatisierten Datenverarbeitung getroffen worden. Einzelheiten finden sie in den zusätzlichen Allgemeinen Geschäftsbedingungen und dem Datenschutzhinweis für RatePAY-Zahlungsarten.');
 define('RATEPAY_RATE_ERROR_GATEWAY', '*Leider ist die Verbindung zu RatePAY derzeit nicht möglich, bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.');
 define('RATEPAY_RATE_PHONE_IS_MISSING', '*Geben Sie bitte für die Zahlungsoption RatePAY Rate Ihre Telefonnummer an.');
 define('RATEPAY_RATE_PHONE_IS_INVALID', '*Geben Sie bitte für die Zahlungsoption RatePAY Rate eine gültige Telefonnummer an.');
