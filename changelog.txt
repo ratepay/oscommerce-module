@@ -1,4 +1,12 @@
 ***********************************************************
+**********| Version 2.1.3 - Released 2014-10-16 |**********
+***********************************************************
+
+* bugfix of error message
+* changes in status message in the order backend
+* bugfix of unite price calculation
+
+***********************************************************
 **********| Version 2.1.2 - Released 2014-09-03 |**********
 ***********************************************************
 * support of AT with separate credentials
