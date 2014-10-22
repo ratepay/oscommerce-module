@@ -532,7 +532,7 @@ class RequestService
     private function _setRequestContent()
     {
         $this->_request->addChild('content');
-        if ($this->_getOperation() != 'CONFIRMATION_DELIVER') {
+        if ($this->_getOperation() == 'PAYMENT_REQUEST') {
             $this->_setRatepayContentCustomer();
         }
 
