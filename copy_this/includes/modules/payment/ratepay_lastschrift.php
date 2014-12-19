@@ -281,7 +281,7 @@ class ratepay_lastschrift extends ratepay_abstract
         global $order;
         
         $this->code                 = 'ratepay_lastschrift';
-        $this->version              = '2.1.3';
+        $this->version              = '2.1.4';
         $this->shopVersion          = str_replace(' ','',str_replace("xt:Commerce v", "", PROJECT_VERSION));
         $this->shopSystem           = 'xt:Commerce';
         $this->title                = MODULE_PAYMENT_RATEPAY_LASTSCHRIFT_TEXT . " (" . $this->version . ")";

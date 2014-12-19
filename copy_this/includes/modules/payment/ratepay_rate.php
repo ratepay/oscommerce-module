@@ -259,7 +259,7 @@ class ratepay_rate extends ratepay_abstract
         global $order;
         
         $this->code                 = 'ratepay_rate';
-        $this->version              = '2.1.3';
+        $this->version              = '2.1.4';
         $this->shopVersion          = str_replace(' ','',str_replace("xt:Commerce v", "", PROJECT_VERSION));
         $this->shopSystem           = 'xt:Commerce';
         $this->title                = MODULE_PAYMENT_RATEPAY_RATE_TEXT . " (" . $this->version . ")";

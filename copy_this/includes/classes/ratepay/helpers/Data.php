@@ -186,10 +186,13 @@ class Data
     {
         $attrTotalPrice = 0;
         foreach ($attributes as $attribute) {
-            $attrTotalPrice += $attribute['price'];
+            if ($attribute['prefix'] == "+") {
+                $attrTotalPrice += $attribute['price'];
+            } else {
+                $attrTotalPrice -= $attribute['price'];
+            }
         }
         return $attrTotalPrice;
-
     }
 
 
