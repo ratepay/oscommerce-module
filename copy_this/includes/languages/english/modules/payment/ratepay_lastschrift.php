@@ -113,10 +113,10 @@ define('MODULE_PAYMENT_RATEPAY_LASTSCHRIFT_ORDER_STATUS_ID_TITLE', 'Bestellstatu
 define('MODULE_PAYMENT_RATEPAY_LASTSCHRIFT_ORDER_STATUS_ID_DESC', 'Bestellungen, welche mit diesem Modul gemacht werden, auf diesen Status setzen');
 // Config text and description end
 //Ratepay Info
-define('RATEPAY_LASTSCHRIFT_MANDATE_1', 'RatePAY GmbH, Schlüterstr. 39, 10629 Berlin');
+define('RATEPAY_LASTSCHRIFT_MANDATE_1', 'RatePAY GmbH, Franklinstraße 28-29, 10587 Berlin');
 define('RATEPAY_LASTSCHRIFT_MANDATE_2', 'Gläubiger-ID: DE39RPY00000568463');
 define('RATEPAY_LASTSCHRIFT_MANDATE_3', 'Mandatsreferenz: (wird nach Kaufabschluss übermittelt)');
-define('RATEPAY_LASTSCHRIFT_AGGREEMENT_1', 'Ich willige hiermit in die Weiterleitung meiner Daten an RatePAY GmbH, Schlüterstr. 39, 10629 Berlin gemäß ');
+define('RATEPAY_LASTSCHRIFT_AGGREEMENT_1', 'Ich willige hiermit in die Weiterleitung meiner Daten an RatePAY GmbH, Franklinstraße 28-29, 10587 Berlin gemäß ');
 define('RATEPAY_LASTSCHRIFT_AGGREEMENT_2', 'ein und ermächtige diese, mit diesem Kaufvertrag in Zusammenhang stehende Zahlungen von meinem o.a. Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die von RatePAY GmbH auf mein Konto gezogenen Lastschriften einzulösen.');
 define('RATEPAY_LASTSCHRIFT_PRIVACY_POLICY', 'RatePAY-Datenschutzerklärung');
 define('RATEPAY_LASTSCHRIFT_NOTICE', 'Hinweis');
